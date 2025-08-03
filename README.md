@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📊 ADmyBRAND Insights Dashboard
 
-## Getting Started
+An AI-powered analytics dashboard built using **Next.js**, **Tailwind CSS**, and **Recharts**, designed to deliver clean, modern data insights with smooth animations, responsive charts, and dark/light mode support.
 
-First, run the development server:
+---
+
+## 🚀 Live Demo
+
+🔗 [Click here to view the live dashboard](https://admybrand-dashboard-beta.vercel.app)
+
+---
+
+## 📦 Features
+
+✅ Responsive layout with modern design  
+✅ Reusable Stat Cards for key metrics  
+✅ Interactive Line, Bar, and Pie charts  
+✅ Smooth animations via `framer-motion`  
+✅ Dark/Light mode toggle using `next-themes`  
+✅ CSV Export support for user data  
+✅ Loading skeletons for better UX  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Styling:** Tailwind CSS, CSS Modules
+- **Charts:** Recharts
+- **Icons:** React Icons
+- **State Management:** React hooks
+- **Animations:** Framer Motion
+- **Dark Mode:** `next-themes`
+
+---
+
+## 📁 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+├── app/
+│   ├── page.tsx           # Dashboard layout
+│   ├── layout.tsx         # Root layout with ThemeProvider
+│   ├── globals.css        # Global styles and variables
+├── components/
+│   ├── StatCard.tsx       # Stat card component
+│   ├── AnalyticsCharts.tsx # Charts section
+│   ├── UserTable.tsx      # Table with CSV export
+│   ├── ThemeToggle.tsx    # Light/Dark toggle
+│   ├── LoadingSkeleton.tsx # Skeleton loader
+├── public/
+├── README.md
+├── package.json
